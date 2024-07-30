@@ -10,4 +10,4 @@ Create a custom web component using the Web Components API. Design a reusable co
 4. add a carousel -- used cards instead
 5. showing dialogue -- used container instead
 
-![Project Image](https://github.com/Hardik-Jain-08/Js-workshop/blob/master/image.png?raw=true)
+![Project Image](https://github.com/Hardik-Jain-08/Js-workshop/blob/master/Assets/image.png?raw=true)
