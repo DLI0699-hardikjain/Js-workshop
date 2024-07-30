@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" defer></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./JS/index.js" defer></script>
+    <title>Ratings</title>
+  </head>
+  <body class="flex flex-col gap-10 font-[Montserrat] items-center justify-center m-0 bg-[#0f172a] overflow-hidden">
+    <nav
+      class="h-14 py-4 w-full bg-[#0f172a] text-white text-center font-mono text-xl bg-gradient-to-r from-blue-700"
+    >
+      Star Rating System
+    </nav>
+    <main>
+      <div class="panel">
+        <div class="ratings-container">
+          <h1>Kindly Fill Out The Form to Give Feedback !!</h1>
+          <form action="" id="ratingForm">
+            <fieldset class="rating">
+              <input type="radio" id="star5" name="rating" value="5" /><label
+                class="full"
+                for="star5"
+              ></label>
+              <input
+                type="radio"
+                id="star4half"
+                name="rating"
+                value="4.5"
+              /><label class="half" for="star4half"></label>
+              <input type="radio" id="star4" name="rating" value="4" /><label
+                class="full"
+                for="star4"></label>
+              <input
+                type="radio"
+                id="star3half"
+                name="rating"
+                value="3.5"
+              /><label class="half" for="star3half"></label>
+              <input type="radio" id="star3" name="rating" value="3" /><label
+                class="full"
+                for="star3"></label>
+              <input
+                type="radio"
+                id="star2half"
+                name="rating"
+                value="2.5"
+              /><label class="half" for="star2half"></label>
+              <input type="radio" id="star2" name="rating" value="2" /><label
+                class="full"
+                for="star2"></label>
+              <input
+                type="radio"
+                id="star1half"
+                name="rating"
+                value="1.5"
+              /><label class="half" for="star1half" title="1.5 stars"></label>
+              <input type="radio" id="star1" name="rating" value="1" /><label
+                class="full"
+                for="star1"></label>
+              <input
+                type="radio"
+                id="starhalf"
+                name="rating"
+                value="0.5"
+              /><label class="half" for="starhalf"></label>
+            </fieldset>
+            <div class="flex flex-col gap-2">
+                <div class="my-2 text-md flex justify-between">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="border" required>
+                </div>
+                <div class="my-2 text-md flex justify-between">
+                    <label for="feedback">Feedback</label>
+                    <input type="text" id="feedback" class="border ml-2" required>
+                </div>
+            </div>
+            <input disabled type="submit" name="getVal" value="Send Review" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="bg-[#fffade] w-[90%] mb-5 rounded flex gap-5 wrap overflow-auto p-5" id="feedback-cards-container">
+    </div>
+  </body>
+</html>
